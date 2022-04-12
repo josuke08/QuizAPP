@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_margin="10sp"
+        android:src="@drawable/romans" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLogin"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="Email"
+        android:layout_margin="10sp"
+        android:inputType="textEmailAddress"
+        android:text="mohamedfarhi2000@hotmail.com" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:text="monahi123"
+        android:inputType="textPassword"
+        android:layout_margin="10sp"
+        android:drawableLeft="@drawable/ic_pwd" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bLogin"
+        android:text="sign in"
+        android:layout_margin="10sp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="To register click here!"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textColor="@color/purple_200"
+        android:paddingTop="20sp" />
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:donut_gapWidth="20"
+        app:donut_gapAngle="270"
+        android:outlineAmbientShadowColor="@color/purple_500"
+        app:donut_strokeWidth="40sp"
+        android:layout_marginTop="50sp" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="-250sp"
+        android:text="XX%"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="100sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="200sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentLeft="true"
+            android:text="Retry" />
+
+        <Button
+            android:id="@+id/bShare"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:text="Share" />
+    </RelativeLayout>
+</LinearLayout>

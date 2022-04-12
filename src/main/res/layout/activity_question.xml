@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/pageIndex"
+        android:layout_width="match_parent"
+        android:layout_height="32sp"
+        android:paddingTop="10sp"
+        android:textAlignment="viewEnd" />
+
+    <ImageView
+        android:id="@+id/imageTest"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:background="@drawable/shadow" />
+
+    <RadioGroup
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
+
+        <RadioButton
+            android:id="@+id/res1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+
+        <RadioButton
+            android:id="@+id/res2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/ress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
+
+        <RadioButton
+            android:id="@+id/res3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/res4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bNext"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="next"
+        android:layout_margin="75sp" />
+
+</LinearLayout>
